@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"[Convert]::ToBase64String\\([IO.File]::ReadAllBytes\\(''C:\\\\Users\\\\kreun\\\\work2026\\\\2026-02-15-화투이미지-윈도우에서\\\\extracted_hwatu\\\\01_솔_광.png''\\)\\)\")",
+      "Bash(powershell -Command \"$b64 = [Convert]::ToBase64String\\([IO.File]::ReadAllBytes\\(''C:\\\\Users\\\\kreun\\\\work2026\\\\2026-02-15-화투이미지-윈도우에서\\\\extracted_hwatu\\\\01_솔_광.png''\\)\\); $b64.Length\")",
+      "Bash(powershell -Command \"$b64 = [Convert]::ToBase64String\\([IO.File]::ReadAllBytes\\(''C:\\\\Users\\\\kreun\\\\work2026\\\\2026-02-15-화투이미지-윈도우에서\\\\extracted_hwatu\\\\01_솔_광.png''\\)\\); Write-Output $b64.Length\")",
+      "Bash(powershell -NoProfile -Command \"$bytes = [System.IO.File]::ReadAllBytes\\(''C:\\\\Users\\\\kreun\\\\work2026\\\\2026-02-15-화투이미지-윈도우에서\\\\extracted_hwatu\\\\01_솔_광.png''\\); $b64 = [System.Convert]::ToBase64String\\($bytes\\); $b64.Length\")",
+      "Bash(certutil -encode:*)",
+      "Bash(python -c:*)"
+    ]
+  }
+}
